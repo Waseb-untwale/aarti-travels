@@ -94,8 +94,8 @@ export default function Contact() {
                 icon: '📧',
                 title: 'Email',
                 desc: 'For detailed inquiries and bookings',
-                contact: 'info@aartitravels.com',
-                link: 'mailto:info@aartitravels.com',
+                contact: 'aartitravels1987@gmail.com',
+                link: 'mailto:aartitravels1987@gmail.com',
                 note: 'We reply within 2 hours'
               }
             ].map((contact, index) => (

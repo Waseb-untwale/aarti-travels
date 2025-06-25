@@ -1,0 +1,219 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="About Us - Aarti Travels" description="Learn about Aarti Travels, your trusted cab service provider in Pune, Maharashtra with years of experience in transportation services.">
+  <!-- Hero Section -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>About Aarti Travels</h1>
+      <p>Your trusted partner for safe and reliable transportation in Pune, Maharashtra</p>
+    </div>
+  </section>
+
+  <!-- About Content -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="grid grid-2">
+        <div>
+          <h2>Our Story</h2>
+          <p>Aarti Travels has been serving the people of Pune, Maharashtra with dedication and commitment for several years. What started as a small cab service has grown into a trusted transportation partner for thousands of customers across the region.</p>
+          
+          <p>We understand that transportation is not just about getting from point A to point B - it's about comfort, safety, reliability, and peace of mind. That's why we've built our entire business around these core values.</p>
+
+          <p>Our journey began with a simple mission: to provide the best cab service experience in Pune. Today, we're proud to be one of the most trusted names in the transportation industry in Maharashtra.</p>
+        </div>
+        <div>
+          <img src="https://images.pexels.com/photos/1125328/pexels-photo-1125328.jpeg?auto=compress&cs=tinysrgb&w=600" alt="About Aarti Travels" style="width: 100%; border-radius: 10px;" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission & Vision -->
+  <section class="mission-vision">
+    <div class="container">
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>🎯 Our Mission</h3>
+          <p>To provide safe, reliable, and comfortable transportation services to our customers while maintaining the highest standards of professionalism and customer satisfaction. We strive to make every journey memorable and stress-free.</p>
+        </div>
+        <div class="card">
+          <h3>🔮 Our Vision</h3>
+          <p>To become the leading cab service provider in Maharashtra, known for our exceptional service quality, innovative solutions, and unwavering commitment to customer satisfaction and safety.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Stats -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center">
+        <h2>Our Experience & Achievements</h2>
+        <p>Numbers that speak for our commitment and dedication</p>
+      </div>
+      
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">5+</div>
+          <div class="stat-label">Years of Service</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">1000+</div>
+          <div class="stat-label">Happy Customers</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">24/7</div>
+          <div class="stat-label">Service Availability</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">50+</div>
+          <div class="stat-label">Destinations Covered</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Values -->
+  <section class="team-values">
+    <div class="container">
+      <div class="text-center">
+        <h2>Our Core Values</h2>
+        <p>The principles that guide everything we do</p>
+      </div>
+      
+      <div class="grid grid-3" style="margin-top: 3rem;">
+        <div class="card text-center">
+          <div class="value-icon">🛡️</div>
+          <h4>Safety First</h4>
+          <p>We prioritize the safety of our passengers above everything else. All our vehicles are regularly maintained and our drivers are well-trained professionals.</p>
+        </div>
+        <div class="card text-center">
+          <div class="value-icon">⭐</div>
+          <h4>Quality Service</h4>
+          <p>We are committed to providing the highest quality of service. From booking to drop-off, we ensure every aspect meets our high standards.</p>
+        </div>
+        <div class="card text-center">
+          <div class="value-icon">💯</div>
+          <h4>Reliability</h4>
+          <p>When you book with us, you can count on us. We understand the importance of punctuality and make sure you reach your destination on time.</p>
+        </div>
+        <div class="card text-center">
+          <div class="value-icon">💰</div>
+          <h4>Fair Pricing</h4>
+          <p>We believe in transparent and fair pricing. No hidden charges, no surprises - just honest pricing for quality service.</p>
+        </div>
+        <div class="card text-center">
+          <div class="value-icon">🤝</div>
+          <h4>Customer Focus</h4>
+          <p>Our customers are at the heart of everything we do. We listen, understand, and strive to exceed expectations in every interaction.</p>
+        </div>
+        <div class="card text-center">
+          <div class="value-icon">🌱</div>
+          <h4>Continuous Improvement</h4>
+          <p>We constantly work to improve our services, adopt new technologies, and enhance the overall customer experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container text-center">
+      <h2>Experience the Aarti Travels Difference</h2>
+      <p>Join thousands of satisfied customers who trust us for their transportation needs</p>
+      <div style="margin-top: 2rem;">
+        <a href="/contact" class="btn">Contact Us Today</a>
+        <a href="/services" class="btn btn-primary">View Our Services</a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .page-hero {
+    background: linear-gradient(135deg, #1E40AF 0%, #3B82F6 100%);
+    color: white;
+    padding: 6rem 0 4rem;
+    text-align: center;
+  }
+
+  .page-hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .page-hero p {
+    font-size: 1.25rem;
+    opacity: 0.9;
+  }
+
+  .mission-vision {
+    background: #F8FAFC;
+    padding: 4rem 0;
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .stat-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+
+  .stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #F97316;
+    margin-bottom: 0.5rem;
+  }
+
+  .stat-label {
+    font-size: 1.1rem;
+    color: #6B7280;
+    font-weight: 500;
+  }
+
+  .team-values {
+    padding: 4rem 0;
+  }
+
+  .value-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .cta-section {
+    background: #1F2937;
+    color: white;
+    padding: 4rem 0;
+  }
+
+  .cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .page-hero h1 {
+      font-size: 2rem;
+    }
+
+    .stats-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cta-section h2 {
+      font-size: 2rem;
+    }
+  }
+</style>

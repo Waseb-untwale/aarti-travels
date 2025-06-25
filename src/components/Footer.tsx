@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4 flex items-center">
+            <h3 className="text-xl font-bold mb-4  p-2 flex items-center">
               <span className="text-3xl mr-2 "><img className="rounded-full w-[60px] h-[60px] object-cover" src='/assets/Logo.png' height={60} width={60}></img></span>
               Aarti Travels
             </h3>

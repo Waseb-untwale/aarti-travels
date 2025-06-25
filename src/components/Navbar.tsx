@@ -21,7 +21,7 @@ export default function Navbar() {
   return (
     <nav className="bg-accent-800 text-white fixed top-0 w-full z-50 shadow-lg">
       <div className="container">
-        <div className="flex justify-between items-center py-4">
+        <div className="flex justify-between items-center py-3">
           {/* Logo */}
           <Link href="/" className="text-2xl font-bold flex items-center">
             <span className="text-3xl mr-2 "><img className="rounded-full w-[60px] h-[60px] object-cover" src='/assets/Logo.png' height={60} width={60}></img></span>

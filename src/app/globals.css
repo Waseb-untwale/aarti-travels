@@ -47,7 +47,7 @@ html {
 
 @media (min-width: 768px) {
   .container {
-    padding: 0 2rem;
+    padding: 1rem 2rem 0rem 2rem;
   }
 }
 

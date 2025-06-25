@@ -24,7 +24,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <Link href="/" className="text-2xl font-bold flex items-center">
-            <span className="text-3xl mr-2">🚕</span>
+            <span className="text-3xl mr-2 "><img className="rounded-full w-[60px] h-[60px] object-cover" src='/assets/Logo.png' height={60} width={60}></img></span>
             Aarti Travels
           </Link>
 

@@ -105,7 +105,7 @@ export default function Packages() {
           <div className="grid md:grid-cols-2 gap-8">
             {[
               {
-                image: 'https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=600',
+                image: '/assets/MaharastraHillStation.jpg',
                 icon: '🏔️',
                 title: 'Maharashtra Hill Stations Tour',
                 duration: '3 Days / 2 Nights',

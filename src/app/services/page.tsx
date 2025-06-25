@@ -23,14 +23,14 @@ export default function Services() {
           <div className="grid md:grid-cols-2 gap-8">
             {[
               {
-                image: 'https://images.pexels.com/photos/1545321/pexels-photo-1545321.jpeg?auto=compress&cs=tinysrgb&w=600',
+                image: '/assets/LOCAL.jpg',
                 icon: '🚖',
                 title: 'Local Taxi Service',
                 desc: 'Perfect for city rides, shopping trips, medical appointments, and daily commuting within Pune. Available 24/7 with professional drivers who know the city inside out.',
                 features: ['Point-to-point transportation', 'Hourly rental packages', 'Multi-stop journeys', 'Emergency rides']
               },
               {
-                image: 'https://images.pexels.com/photos/2662816/pexels-photo-2662816.jpeg?auto=compress&cs=tinysrgb&w=600',
+                image: '/assets/OUTSTAION.jpg',
                 icon: '🏔️',
                 title: 'Outstation Travel',
                 desc: 'Comfortable long-distance travel to destinations across Maharashtra and neighboring states. Perfect for weekend getaways, business trips, and family vacations.',
@@ -44,7 +44,7 @@ export default function Services() {
                 features: ['Pune Airport transfers', 'Mumbai Airport connections', 'Flight tracking service', 'Meet & greet service']
               },
               {
-                image: 'https://images.pexels.com/photos/3422964/pexels-photo-3422964.jpeg?auto=compress&cs=tinysrgb&w=600',
+                image: '/assets/CORPORATE.jpg',
                 icon: '💼',
                 title: 'Corporate Travel',
                 desc: 'Professional transportation solutions for businesses. Regular employee commutes, client meetings, corporate events, and executive travel with priority booking.',

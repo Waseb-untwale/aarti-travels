@@ -44,7 +44,7 @@ export default function WhyChooseUs() {
           </div>
           <div className="slide-in-right">
             <Image
-              src="https://images.pexels.com/photos/3422964/pexels-photo-3422964.jpeg?auto=compress&cs=tinysrgb&w=600"
+              src="/assets/Cabs.jpg"
               alt="Professional Driver"
               width={600}
               height={400}

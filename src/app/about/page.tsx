@@ -32,7 +32,7 @@ export default function About() {
             </div>
             <div className="slide-in-right">
               <img
-                src="https://media.istockphoto.com/id/467020119/photo/yellow-taxis-in-new-york-selective-focus.jpg?s=612x612&w=0&k=20&c=72pE9B4i3qbLu6GHiVhJf92oHkEsfqr6jpQnL5kT_EM="
+                src="/assets/Story.jpg"
                 alt="About Aarti Travels"
                 width={600}
                 height={400}

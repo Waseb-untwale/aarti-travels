@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: 'Aarti Travels - Premium Cab Services in Pune, Maharashtra',
   description: 'Your trusted cab service partner in Pune, Maharashtra. Safe, reliable, and comfortable rides for all your travel needs. Book now!',
   keywords: 'cab service pune, taxi pune, aarti travels, outstation cab, airport transfer pune',
+  icons: {
+    icon: '/assets/favicon.ico',
+  },
 }
 
 export default function RootLayout({

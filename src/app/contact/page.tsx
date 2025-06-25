@@ -87,7 +87,7 @@ export default function Contact() {
                 title: 'WhatsApp',
                 desc: 'Quick booking and instant quotes',
                 contact: '+91 9307579578',
-                link: 'https://wa.me/91932578052',
+                link: 'https://wa.me/919307579578',
                 note: 'Chat with us anytime'
               },
               {

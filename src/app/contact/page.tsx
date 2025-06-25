@@ -12,8 +12,11 @@ export default function Contact() {
     destination: '',
     date: '',
     time: '',
+    returnDate: '',
+    returnTime: '',
     vehicle: '',
     tripType: '',
+    tripMode: 'oneWay', // New field for One Way / Round Trip
     passengers: '1',
     requirements: ''
   })
@@ -26,10 +29,15 @@ export default function Contact() {
     message += `👤 *Name:* ${formData.name}\n`
     message += `📞 *Phone:* ${formData.phone}\n`
     if (formData.email) message += `📧 *Email:* ${formData.email}\n`
+    message += `🛣️ *Trip Mode:* ${formData.tripMode === 'oneWay' ? 'One Way' : 'Round Trip'}\n`
     message += `📍 *Pickup:* ${formData.pickup}\n`
     message += `🎯 *Destination:* ${formData.destination}\n`
     message += `📅 *Date:* ${formData.date}\n`
     message += `🕐 *Time:* ${formData.time}\n`
+    if (formData.tripMode === 'roundTrip') {
+      message += `📅 *Return Date:* ${formData.returnDate}\n`
+      message += `🕐 *Return Time:* ${formData.returnTime}\n`
+    }
     message += `🚗 *Vehicle:* ${formData.vehicle}\n`
     message += `🛣️ *Trip Type:* ${formData.tripType}\n`
     message += `👥 *Passengers:* ${formData.passengers}\n`
@@ -79,15 +87,15 @@ export default function Contact() {
                 title: 'WhatsApp',
                 desc: 'Quick booking and instant quotes',
                 contact: '+91 9307579578',
-                link: 'https://wa.me/919307579578',
+                link: 'https://wa.me/91932578052',
                 note: 'Chat with us anytime'
               },
               {
                 icon: '📧',
                 title: 'Email',
                 desc: 'For detailed inquiries and bookings',
-                contact: 'aartitravels1987@gmail.com',
-                link: 'mailto:aartitravels1987@gmail.com',
+                contact: 'info@aartitravels.com',
+                link: 'mailto:info@aartitravels.com',
                 note: 'We reply within 2 hours'
               }
             ].map((contact, index) => (
@@ -143,6 +151,35 @@ export default function Contact() {
             </div>
             
             <div className="bg-white p-8 rounded-2xl shadow-lg">
+              {/* Trip Mode Selection */}
+              <div className="mb-8">
+                <h3 className="text-lg font-semibold text-accent-800 mb-4">Select Trip Mode</h3>
+                <div className="flex gap-6">
+                  <label className="flex items-center cursor-pointer">
+                    <input
+                      type="radio"
+                      name="tripMode"
+                      value="oneWay"
+                      checked={formData.tripMode === 'oneWay'}
+                      onChange={handleChange}
+                      className="w-4 h-4 text-primary-600 border-accent-300 focus:ring-primary-500"
+                    />
+                    <span className="ml-2 text-accent-700 font-medium">One Way</span>
+                  </label>
+                  <label className="flex items-center cursor-pointer">
+                    <input
+                      type="radio"
+                      name="tripMode"
+                      value="roundTrip"
+                      checked={formData.tripMode === 'roundTrip'}
+                      onChange={handleChange}
+                      className="w-4 h-4 text-primary-600 border-accent-300 focus:ring-primary-500"
+                    />
+                    <span className="ml-2 text-accent-700 font-medium">Round Trip</span>
+                  </label>
+                </div>
+              </div>
+
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-accent-700 mb-2">
@@ -252,6 +289,42 @@ export default function Contact() {
                     />
                   </div>
                 </div>
+
+                {/* Return Date/Time fields - only show for round trip */}
+                {formData.tripMode === 'roundTrip' && (
+                  <div className="grid md:grid-cols-2 gap-4 p-4 bg-accent-50 rounded-xl">
+                    <div>
+                      <label htmlFor="returnDate" className="block text-sm font-medium text-accent-700 mb-2">
+                        Return Date *
+                      </label>
+                      <input
+                        type="date"
+                        id="returnDate"
+                        name="returnDate"
+                        required={formData.tripMode === 'roundTrip'}
+                        min={formData.date || new Date().toISOString().split('T')[0]}
+                        value={formData.returnDate}
+                        onChange={handleChange}
+                        className="w-full px-4 py-3 border-2 border-accent-200 rounded-xl focus:border-primary-500 focus:outline-none transition-colors"
+                      />
+                    </div>
+
+                    <div>
+                      <label htmlFor="returnTime" className="block text-sm font-medium text-accent-700 mb-2">
+                        Return Time *
+                      </label>
+                      <input
+                        type="time"
+                        id="returnTime"
+                        name="returnTime"
+                        required={formData.tripMode === 'roundTrip'}
+                        value={formData.returnTime}
+                        onChange={handleChange}
+                        className="w-full px-4 py-3 border-2 border-accent-200 rounded-xl focus:border-primary-500 focus:outline-none transition-colors"
+                      />
+                    </div>
+                  </div>
+                )}
 
                 <div>
                   <label htmlFor="vehicle" className="block text-sm font-medium text-accent-700 mb-2">

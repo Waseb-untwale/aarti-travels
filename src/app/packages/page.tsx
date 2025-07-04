@@ -123,7 +123,7 @@ export default function Packages() {
                 price: '₹15,000'
               },
               {
-                image: 'https://images.pexels.com/photos/830891/pexels-photo-830891.jpeg?auto=compress&cs=tinysrgb&w=600',
+                image: '/assets/MaharastraHeritge.jpg',
                 icon: '🏛️',
                 title: 'Heritage Maharashtra Tour',
                 duration: '5 Days / 4 Nights',
